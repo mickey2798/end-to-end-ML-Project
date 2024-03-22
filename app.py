@@ -6,8 +6,7 @@ import os
 from sklearn.preprocessing import StandardScaler
 from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 
-## Route for a home page
-
+## home page
 def index():
     st.title('Student Exam Performance Prediction')
     st.write("Welcome to the home page. Fill in the form below to predict the Maths Score.")
