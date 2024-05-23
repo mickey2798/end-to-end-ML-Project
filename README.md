@@ -37,11 +37,11 @@ AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
 ECR_REPOSITORY_NAME = simple-app
 
 
-##Deploy end to end ML application to AWS EKS
-##Step-1
+## Deploy end to end ML application to AWS EKS
+## Step-1
 Build a Docker Image for the Streamlit Application, push it to dockerhub
 
-##Step-2
+## Step-2
 Creating the Amazon Elastic Kubernetes Service(EKS) Service(Using CLI)
 	a. Install AWS CLI and then add Secret Access Keys and Access Keys
 	b. Download Kubernetes CLI(https://s3.us-west-2.amazonaws.com/amazon-eks/1.23.7/2022-06-29/bin/windows/amd64/kubectl.exe), its basically a CLI tool to work with EKS directly.
