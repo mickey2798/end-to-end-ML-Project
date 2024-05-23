@@ -43,15 +43,15 @@ Build a Docker Image for the Streamlit Application, push it to dockerhub
 
 ## Step-2
 Creating the Amazon Elastic Kubernetes Service(EKS) Service(Using CLI)
-	a. Install AWS CLI and then add Secret Access Keys and Access Keys
-	b. Download Kubernetes CLI(https://s3.us-west-2.amazonaws.com/amazon-eks/1.23.7/2022-06-29/bin/windows/amd64/kubectl.exe), its basically a CLI tool to work with EKS directly.
-	c. Install eksctl (choco install -y eksctl), its CLI tool that will enable you to create an Amazon EKS cluster easier and faster. A single `eksctl` command will create an Amazon EKS cluster with all the resources.
-	d. Creating the Amazon EKS Cluster using eksctl, eg. eksctl create cluster --name studentperformance --region us-east-2 --with-oidc --ssh-access --ssh-public-key sample-ec2 --instance-types=m5.xlarge --managed 
-	e. Deploying the streamlit app, for your ref. https://github.com/mickey2798/end-to-end-ML-Project/blob/main/streamlit-app-deployment.yaml
-	f. deployment cmnd - kubectl apply -f streamlit-app-deployment.yaml
-	g. Viewing the deployed resource - kubectl get pods
-	h. View all the deployments - kubectl get deployments
-	i. View the service - kubectl get services, this cmd exposes the containerized application on an `EXTERNAL IP` address. You can access the application using the given URL. 
+	### a. Install AWS CLI and then add Secret Access Keys and Access Keys
+	### b. Download Kubernetes CLI(https://s3.us-west-2.amazonaws.com/amazon-eks/1.23.7/2022-06-29/bin/windows/amd64/kubectl.exe), its basically a CLI tool to work with EKS directly.
+	### c. Install eksctl (choco install -y eksctl), its CLI tool that will enable you to create an Amazon EKS cluster easier and faster. A single `eksctl` command will create an Amazon EKS cluster with all the resources.
+	### d. Creating the Amazon EKS Cluster using eksctl, eg. eksctl create cluster --name studentperformance --region us-east-2 --with-oidc --ssh-access --ssh-public-key sample-ec2 --instance-types=m5.xlarge --managed 
+	### e. Deploying the streamlit app, for your ref. https://github.com/mickey2798/end-to-end-ML-Project/blob/main/streamlit-app-deployment.yaml
+	### f. deployment cmnd - kubectl apply -f streamlit-app-deployment.yaml
+	### g. Viewing the deployed resource - kubectl get pods
+	### h. View all the deployments - kubectl get deployments
+	### i. View the service - kubectl get services, this cmd exposes the containerized application on an `EXTERNAL IP` address. You can access the application using the given URL. 
 	
 
 
